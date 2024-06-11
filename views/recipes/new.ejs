@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../../partials/navbar.ejs') %>
+    
+<h1>Add new Recipe</h1>
+
+
+
+
+    <form action ='/recipes/create' method = 'POST' id="Create-Recipe">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            
+            <label for="instructions">Instructions:</label>
+            <textarea name="instructions" id="instructions"></textarea>
+            
+            <label for="owner">Owner:</label>
+            <input name="owner" id="owner"></input>
+            
+          </form>
+
+          
+            <!-- <h3>
+                <label for="postingLink">Ingredients:</label>
+            </h3>
+            
+            
+                
+            
+        
+     
+            <select name = 'select-Ingredient' id = 'select-Ingredient'>
+            
+                <option value = ''> Please choose an Ingredient</option>
+                <% ingredients.forEach((ingredient) =>{%>
+                <option value = <%= ingredient.name %> > <%= ingredient.name %> </option>
+                <%})%>
+
+            </select>
+
+            <button type="submit">Add Ingredient to recipe</button>
+             -->
+            
+        
+    </br>
+        <button type="submit" form = 'Create-Recipe'>Submit Recipe</button>
+
+</body>
+</html>
